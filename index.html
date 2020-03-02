@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html land="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-compatible" content="ie=edge">
-    <title>Document</title>
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="ShoppingOnline">
+    <meta name="author" content="SitePoint">
 
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -15,7 +15,8 @@
     <script src="https://kit.fontawesome.com/2747f6c49f.js" crossorigin="anonymous"></script>
 
     <!--Custom Stylesheet-->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -85,16 +86,26 @@
                     </li>
                 </div>
             </nav>
-        </div>
     </header>
 
-    <main></main>
+    <section>
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="./assets/7.jpg" id="lastClone" class="img-fluid" alt="">
+                <img src="./assets/4.jpg" class="img-fluid" alt="">
+                <img src="./assets/5.jpg" class="img-fluid" alt="">
+                <img src="./assets/6.jpg" class="img-fluid" alt="">
+                <img src="./assets/7.jpg" class="img-fluid" alt="">
+                <img src="./assets/4.jpg" id="firstClone" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+    </section>
     <footer></footer>
 
-
-
-
-
+    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

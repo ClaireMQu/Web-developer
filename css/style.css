@@ -1,74 +1,91 @@
 /* impor fonts from google fonts*/
+
 @import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap');
-
-:root{
-    --light-gray:#2b3032a1;
-    --primary-color:#45ccb8;
-    --border:#2b303218;
-    --text-color:#ff686b;
-    --roboto:"Roboto",sans-serif;
-    --gugi:"Gugi",cursive;
-    --sofia:"Sofia",cursive;
+:root {
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
 }
 
-.primary-color{
-    color:var(--primary-color);
+.primary-color {
+    color: var(--primary-color);
 }
 
-.bg-primary-color{
+.bg-primary-color {
     background-color: var(--primary-color)!important;
 }
 
-.text-color{
-    color:var(--text-color);
+.text-color {
+    color: var(--text-color);
 }
 
-.font-roboto{
+.font-roboto {
     font-family: var(--roboto);
 }
 
-.font-gugi{
+.font-gugi {
     font-family: var(--gugi);
 }
 
-.lightblue{
-    color:lightblue;
+.lightblue {
+    color: lightblue;
 }
 
 /*header*/
 
-header{
+header {
     background-color: var(--primary-color);
     font-family: var(--roboto);
 }
 
-header .site-title{
+header .site-title {
     font-family: var(--gugi);
 }
 
-.container.dropdown-toggle,
-.container.dropdown.item{
+.container .dropdown-toggle, .container .dropdown.item {
     font-size: 0.7em;
 }
 
-.header-links a{
+.header-links a {
     font-size: 0.9em;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /*Navigation Menu*/
-.navbar-nav{
-    padding:0.8em 0em;
+
+.navbar-nav {
+    padding: 0.8em 0em;
 }
-.navbar-nav .nav-link{
+
+.navbar-nav .nav-link {
     font-size: 0.9em;
     color: var(--light-gray)!important;
 }
-.navbar-nav .nav-item .nav-link{
-    padding:0 1.3em;
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0 1.3em;
 }
 
-.navbar-nav .basket-icon{
-    margin-right:6.5em!important;
+.navbar-nav .basket-icon {
+    margin-right: 6.5em!important;
+}
+
+/*first slide*/
+
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    border: 5px dotted var(--primary-color);
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
 }
