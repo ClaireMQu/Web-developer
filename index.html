@@ -1,122 +1,68 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="ShoppingOnline">
-    <meta name="author" content="SitePoint">
-
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!--Font Awesome CDN-->
-    <script src="https://kit.fontawesome.com/2747f6c49f.js" crossorigin="anonymous"></script>
-
-    <!--Custom Stylesheet-->
-    <link rel="stylesheet" href="./css/style.css">
-
+    <meta http-equiv="Content-Tpye" content="text/html; charset=urf-8" />
+    <title>Call Center</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" tyoe="image/png" href="img/icon.png" />
+    <script src="js/commen.js"></script>
+    <script src="js/screen.js"></script>
+    <script> window.onscroll = function () { topmenuchage() };    </script>
 </head>
 
 <body>
+    <div id="cover" class="cover_off" onclick="closesubpage()"></div>
+    <div id="content_block"><iframe id="content_page" class="content_block_iframe_off" src='/pages/'></iframe></div>
+    <div id="close" class="close_off" onclick="closesubpage()"></div>
 
-    <!--header-->
-    <header>
-        <div class="container">
-            <div class="row">
-                <!--12 column width to this division. The first column-->
-                <div class="col-md-4 col-sm-12 col-12">
-                    <div class="bt-group">
-                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">USD
-                        </button>
-                        <div class="dropdown-menu">
-                            <a href="#" class="deopdown-item">ERU-Euro</a>
-                        </div>
-                    </div>
-                </div>
-                <!--12 column width to this division. The second column-->
-                <div class="col-md-4 col-12 text-center">
-                    <h2 class="my-md-3 site-title text-white">Online Store</h2>
-                </div>
-                <!--12 column width to this division. The third column-->
-                <div class="col-md-4 col-12 text-right">
-                    <p class="my-md-4 header-links">
-                        <a href="#" class="px-2">Sign In</a>
-                        <a href="#" class="px-1">Create an Accont</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--navifation menu https://getbootstrap.com/docs/4.4/components/navbar/-->
-        <div class="container-fluid p-0">
-            <!-- p-0 change padding to 0-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">COLLECTION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SHOP</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-nav">
-                    <li class="nav-item border rounded-circle mx-2 search-icon">
-                        <i class="fas fa-search p-2"></i>
-                    </li>
-                    <li class="nav-item border rounded-circle mx-2 basket-icon">
-                        <i class="fas fa-shopping-basket p-2"></i>
-                    </li>
-                </div>
+    <div id="header" class="headeroff">
+        <div id="nav" class="nav">
+            <nav>
+                <img src="img/logo.jpg" height="100px">
+                <a onclick="opensubpage('about.html')">About Us</a>
+                <a onclick="opensubpage('work.html')">How it works</a>
+                <a onclick="opensubpage('service.html')">Our service</a>
+                <a onclick="opensubpage('choose.html')">Why choose us</a>
+                <a onclick="opensubpage('faq.html')">FAQ</a>
+                <a onclick="opensubpage('contact.html')">Contact Us</a>
             </nav>
-    </header>
+        </div>
+    </div>
 
-    <section>
-        <!--First Slider-->
-        <div class="carousel-container">
-            <i class="fas fa-arrow-left" id="prevBtn"></i>
-            <i class="fas fa-arrow-right" id="nextBtn"></i>
-            <div class="carousel-slide">
-                <img src="./assets/7.jpg" id="lastClone" class="img-fluid" alt="">
-                <img src="./assets/4.jpg" class="img-fluid" alt="">
-                <img src="./assets/5.jpg" class="img-fluid" alt="">
-                <img src="./assets/6.jpg" class="img-fluid" alt="">
-                <img src="./assets/7.jpg" class="img-fluid" alt="">
-                <img src="./assets/4.jpg" id="firstClone" class="img-fluid" alt="">
+    <div id="banner"></div>
+
+    <main id="main">
+        <div id="main_menu">
+            <div class="main_menu">
+                <div class="menu_title" style="background-image:url(img/whoweare.PNG)"> WHO YOU ARE</div>
+                <div class="menu_content">
+                    <P>CC is your call center managed by people who have over 30 years of combined experience.</P>
+                    <span style="float:right;"><a style="font-size:15px; cursor:pointer"
+                            onclick="opensubpage('about.html')">...more</a></span>
+                </div>
+            </div>
+            <div class="main_menu">
+                <div class="menu_title" style="background-image:url(img/whatwedo.PNG)">WHAT WE DO</div>
+                <div class="menu_content">
+                    <p>We bring to you your very own contact center providing core support your business.</p>
+                    <span style="float:right;"><a style="font-size:15px; cursor:pointer"
+                            onclick="opensubpage('service.html')">...more</a></span>
+                </div>
+            </div>
+            <div class="main_menu">
+                <div class="menu_title" style="background-image:url(img/howwework.PNG)">HOW WE WORK</div>
+                <div class="menu_content">
+                    <p>We make it really simple for you. Just follow the process</p>
+                    <span style="float:right;"><a style="font-size:15px; cursor:pointer"
+                            onclick="opensubpage('work.html')">...more</a></span>
+                </div>
             </div>
         </div>
-
-       
-    </section>
-    <footer></footer>
-
-    <script src="./js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    </main>
+    <footer>
+        <p>Copyright©2018.Powered by callcentre Limited</p>
+    </footer>
 </body>
 
 </html>
