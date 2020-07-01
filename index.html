@@ -3,15 +3,19 @@
 
 <head>
     <meta http-equiv="Content-Tpye" content="text/html; charset=urf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call Center</title>
+    <link rel="stylesheet" media="screen and (min-width:90px)" href="css/pcstyle.css">
+    <link rel="stylesheet" media="screen and (max-width:970px)" href="css/mbstyle.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" tyoe="image/png" href="img/icon.png" />
     <script src="js/commen.js"></script>
     <script src="js/screen.js"></script>
-    <script> window.onscroll = function () { topmenuchage() };    </script>
+    <script> window.onscroll = function () { topmenuchage() };</script>
 </head>
 
 <body>
+    <div id="mbmbut" class="mbmbut" onclick="menuswitch();"></div>
     <div id="cover" class="cover_off" onclick="closesubpage()"></div>
     <div id="content_block"><iframe id="content_page" class="content_block_iframe_off" src='/pages/'></iframe></div>
     <div id="close" class="close_off" onclick="closesubpage()"></div>
@@ -32,7 +36,7 @@
 
     <div id="banner"></div>
 
-    <main id="main">
+    <main>
         <div id="main_menu">
             <div class="main_menu">
                 <div class="menu_title" style="background-image:url(img/whoweare.PNG)"> WHO YOU ARE</div>
