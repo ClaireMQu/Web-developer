@@ -17,6 +17,5 @@ function menuswitch(){
 		    }
 		}else{
 			document.getElementById('nav').className='navshow';
-			//document.getElementById('header').className='headeroff';
 			}
 	}
