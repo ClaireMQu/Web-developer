@@ -17,10 +17,12 @@
     <script>
         var lastMouseX = null;
         var lastMouseY=null;
-        document.body.addEventLlistener("click",function(e){
+        document.body.addEventListener("click",function(e){
             lastMouseX=e.screenX;
             lastMouseY=e.screenY;
-            if(checkMouseoff('ddm2')==1){
+            // alert(CheckMenuoff('ddm2')+' x ' +lastMouseX+' y '+lastMouseY);
+            if(CheckMenuoff('ddm2')==1){
+                // alert(CheckMenuoff('ddm2')+' x: ' +lastMouseX+' y: '+lastMouseY);
                 closedmms(lastMouseX,lastMouseY,'ddm2');
             }
         });

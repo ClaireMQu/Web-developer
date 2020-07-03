@@ -3,15 +3,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     /* image will not scroll */
     background-attachment: fixed;
     background-size: 100%;
-    background-color:#fff;
-    background-position:top center;
+    background-color: #fff;
+    background-position: top center;
 }
 
 a:link {
@@ -35,7 +35,7 @@ a:hover {
     /* box-shadow */
     background: #fff;
     position: fixed;
-    z-index:70;
+    z-index: 70;
     top: 0px;
     right: 0px;
 }
@@ -48,34 +48,34 @@ a:hover {
     height: 60px;
 }
 
-#mbmbut{
-    padding:0;
-    cursor:pointer;
-    position:fixed;
-    z-index:99;
-    top:0;
-    right:0;
+#mbmbut {
+    padding: 0;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
     background: url(../img/menubut.PNG) no-repeat center center;
     background-size: 90% auto;
 }
 
-.mbmbut{    
-    width:50px;
-    height:50px;
-    box-shadow:0px 0px 3px 0px #999;
-    border-radius:5px;
-    margin:5px;
-    cursor:pointer;
+.mbmbut {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 3px 0px #999;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
 }
 
 #nav {
-    width: 100%;    
+    width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
-.nav{
-    height: auto;
+.nav {
+    height: 60px;
     overflow: hidden;
 }
 
@@ -85,54 +85,54 @@ a:hover {
 
 .nav img {
     height: 60px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .navon {
     height: 60px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .navon img {
     height: 60px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .navon a {
-    visibility:hidden;
+    visibility: hidden;
 }
 
-.navshow{
-    height:auto;
-    overflow:auto;
-    position:fixed;
-    top:0px;
-    left:0px;
-    z-index:80;
-    background:#fff;
+.navshow {
+    height: auto;
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 80;
+    background: #fff;
 }
 
-.navshow img{
-    height:60px;
-    cursor:pointer;
+.navshow img {
+    height: 60px;
+    cursor: pointer;
 }
 
-.navshow a{
-    width:100%;
-    height:50px;
-    text-align:center;
-    margin:2px 0 0 0;
-    padding:0;
-    color:#000;
-    display:block;
-    background-color:#eee;
-    line-height:50px;
-    font-size:14px;
+.navshow a {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: 2px 0 0 0;
+    padding: 0;
+    color: #000;
+    display: block;
+    background-color: #eee;
+    line-height: 50px;
+    font-size: 14px;
 }
 
-.navshow a:hover{
-    background-color:#999;
-    cursor:pointer;
+.navshow a:hover {
+    background-color: #999;
+    cursor: pointer;
 }
 
 /* main */
@@ -160,7 +160,7 @@ a:hover {
 .bannertext span {
     font-size: 30px;
     font-weight: bolder;
-  }
+}
 
 main {
     width: 100%;
@@ -261,7 +261,7 @@ footer p {
     z-index: 102;
     top: 1%;
     left: 1%;
-    width:98%;
+    width: 98%;
     height: 98%;
     border-radius: 5px;
     background: #000;
@@ -293,6 +293,7 @@ footer p {
 }
 
 /* close */
+
 #close {
     position: fixed;
 }
@@ -320,35 +321,35 @@ footer p {
     width: 100%;
     height: auto;
     overflow: auto;
-  }
-  
-  .contactform .label {
+}
+
+.contactform .label {
     width: 80px;
     height: 30px;
     line-height: 30px;
     float: left;
     color: #fff;
     text-align: left
-  }
-  
-  .contactform .input {
+}
+
+.contactform .input {
     width: 280px;
     height: 24px;
     line-height: 30px;
     float: left;
-    border: 1px #999 solid;
+    border: 1px solid #999;
     background: #666
-  }
-  
-  .contactform .email {
+}
+
+.contactform .email {
     width: 280px;
     height: 30px;
     line-height: 30px;
     float: left;
     border: 1px #999 solid;
     background: #666
-  }
-  
-  /* .contactform .message {}
+}
+
+/* .contactform .message {}
   
   .contactform .button {} */
